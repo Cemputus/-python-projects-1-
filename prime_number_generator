@@ -1,3 +1,4 @@
+#cemputus
 def generate_primes(N):
     primes = []
     num = 2
