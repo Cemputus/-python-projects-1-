@@ -1,10 +1,11 @@
+##Cemputus##
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
 
-class myApp(App):
+class Calculator(App):
     def build(self):
         root_widget = BoxLayout(orientation='vertical')
         output_label = Label(size_hint_y = 0.75, font_size=50)
@@ -40,4 +41,6 @@ class myApp(App):
         root_widget.add_widget(button_grid)
         root_widget.add_widget(clear_button)
         return root_widget
-myApp().run()
+Calculator().run()
+
+#Cen_prototype
