@@ -1,0 +1,25 @@
+def generate_primes(N):
+    primes = []
+    num = 2
+
+    while len(primes) < N:
+        is_prime = True
+        for prime in primes:
+            if prime * prime > num:
+                break
+            if num % prime == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+        num += 1
+
+    return primes
+
+# Example 
+N = 5  
+prime_list = generate_primes(N)
+print(prime_list)
+
+# Note : 
+# Change N to the number of primes you want to generate
